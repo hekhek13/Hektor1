@@ -17,6 +17,11 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
+  def new
+    @featured_product = Product.new
+  end
+
+
   # GET /products/1/edit
   def edit
   end
