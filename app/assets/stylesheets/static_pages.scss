@@ -10,7 +10,7 @@ h1 {
 }
 /*** Navigation ***/
 .navbar a:hover {
-	color:#White;
+	color:blue;
 	text-decoration:none;
 	transition:color 600ms;
 	-webkit-transition:color 600ms;
@@ -18,10 +18,21 @@ h1 {
 .navbar ul li {
 	text-align: center;
 	display:inline-block;
-	font-size: 1em;
+	font-size: 1.3em;
+	text-color:blue;
 }
+
+.form-group {
+	color: blue;
+}
+
+.navbar a {
+	color:white;
+}
+
 .Projectname {
 	text-transform:uppercase;
+	padding-right:2px
 }
 .anchor {
 	padding-top:51px;
