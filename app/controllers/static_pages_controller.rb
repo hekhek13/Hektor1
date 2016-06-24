@@ -8,8 +8,6 @@ class StaticPagesController < ApplicationController
     @products = Product.limit(3)
   end
 
-end
-
 def thank_you
   @name = params[:name]
   @email = params[:email]
@@ -18,4 +16,6 @@ def thank_you
       :to => 'hekhek13@gmail.com',
       :subject => "A new contact form message from #{@name}",
       :body => @message).deliver_now
+end
+
 end
