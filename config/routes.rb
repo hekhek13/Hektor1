@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
   get '/products/:id', to: 'products#show'
 
+  get '/static_pages/products'
+
   post 'static_pages/thank_you'
 
   # The priority is based upon order of creation: first created -> highest priority.

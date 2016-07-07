@@ -20,6 +20,7 @@ h1 {
 	display:inline-block;
 	font-size: 1.3em;
 	text-color:blue;
+	padding-left: .75em;
 }
 
 .form-group {
@@ -44,9 +45,15 @@ footer {
 	background-color: grey;
 	position: relative;
 	padding-top:2em;
+	padding-left:1em
 }
 
+/***Products***/
 
+.container-fluid {
+	color: black;
+	font: helvetica, sans-serif;
+}
 
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
