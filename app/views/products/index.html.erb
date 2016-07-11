@@ -1,12 +1,15 @@
-
-
-
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Products</h1>
 
-  <%= render 'products/product' %>
-  <%= render 'products/new_comment' %>
+<div class="col-md-4 col-xs-12 comment_wrapper">
+<!-- <div class="row"> -->
+
+  <%= render 'product' %>
+  <%= render 'new_comment' %>
+  <%= render 'comments' %>
+
+</div>
 
 <div class="productfooter">
   <br>
