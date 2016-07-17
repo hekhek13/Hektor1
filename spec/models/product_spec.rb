@@ -9,7 +9,7 @@ before do
 end
 
 before do
-  @user = User.create!(email: "pancho@test.com", password: "pancho")
+  @user = User.create!(email: "pancho100@test.com", password: "pancho")
 end
 
 before do
