@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20160713195654) do
     t.text     "body"
     t.integer  "rating"
     t.integer  "product_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_index "comments", ["product_id"], name: "index_comments_on_product_id"
