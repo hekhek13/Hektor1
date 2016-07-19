@@ -3,8 +3,8 @@ require 'rails_helper'
 describe UsersController, :type => :controller do
 
   before do
-    @user = User.create!(email: "test222@test.com", password: "test222")
-    @user = User.create!(email: "test333@test.com", password: "test333")
+    @user = FactoryGirl.create(:user)
+    @user1 = FactoryGirl.create(:user)
   end
 
 
@@ -40,7 +40,7 @@ describe UsersController, :type => :controller do
     end
  end
 end
-
+   
 
 #before do
   #here you put your code to generate test content
