@@ -1,7 +1,7 @@
 if Rails.env.production?
   Rails.configuration.stripe = {
-    :publishable_key => ENV['STRIPE_PUBLISHABLE_KEY'],
-    :secret_key => ENV['STRIPE_SECRET_KEY']
+    :publishable_key => ENV['pk_live_0foxFlXNrzF6FrfqvCrH6dyS'],
+    :secret_key => ENV['sk_live_E4mW49RM6uG79NuzwEavZCeZ']
   }
 else
   Rails.configuration.stripe = {
