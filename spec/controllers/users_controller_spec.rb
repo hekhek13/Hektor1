@@ -40,7 +40,7 @@ describe UsersController, :type => :controller do
     end
  end
 end
-   
+    
 
 #before do
   #here you put your code to generate test content
