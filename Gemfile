@@ -38,6 +38,10 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.4'
   gem 'factory_girl_rails', '~> 4.0'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+  gem "spork-rails"
+  gem 'guard-spork'
 end
 
 group :development do
