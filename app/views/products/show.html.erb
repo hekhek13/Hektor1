@@ -1,11 +1,10 @@
-
 <p id="notice"><%= notice %></p>
 
 <div class="container">
   <div class="row">
   <div class="col-md-8">
 <p>
-  <%= image_tag(@product.image_url, width: "350", class: "img-responsive", id: "img-zoom") %>
+  <%= image_tag(@product.image_url, width: "350", class: "img-responsive", id: "img-zoom", data_zoom_image:@product.image_url) %>
 <p>
 
   <strong>Name:</strong>
@@ -51,7 +50,3 @@
 </div>
 </div>
 </div>
-
-<script>
-$('#img-zoom').elevateZoom();
-</script>
