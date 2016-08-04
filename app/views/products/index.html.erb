@@ -2,8 +2,9 @@
 
 <h1>Listing Products</h1>
 
-
+<% cache(cache_key_for_products) do %>
   <%= render 'product' %>
+<% end %>
 
  
 

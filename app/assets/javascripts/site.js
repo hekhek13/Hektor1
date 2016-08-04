@@ -8,3 +8,4 @@ $(document).on('ready page:load', function(){
     });
     $('#img-zoom').elevateZoom();
 });
+
