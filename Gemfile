@@ -66,4 +66,10 @@ gem 'will_paginate', '~> 3.1.0'
 
 gem 'stripe'
 
+gem 'memcachier'
+
 gem 'dalli'
+
+gem 'redis-rails', '~> 4'
+
+gem 'newrelic_rpm'

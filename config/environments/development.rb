@@ -43,5 +43,3 @@ Rails.application.configure do
 
   default_url_options
 end
-
-
