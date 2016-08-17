@@ -2,14 +2,16 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '~> 5.0.0'
 # Use sqlite3 as the database for Active Record
+# Use Puma as the app server
+gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -40,21 +42,23 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.0'
   gem 'guard'
   gem 'guard-rspec', require: false
-  gem "spork-rails"
+  #gem "spork-rails"
   gem 'guard-spork'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
+  gem 'listen', '~> 3.0.5'
   gem 'brakeman', :require => false
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
-  gem 'rails_12factor'
   gem 'pg'
 end
 
@@ -70,6 +74,4 @@ gem 'memcachier'
 
 gem 'dalli'
 
-gem 'redis-rails', '~> 4'
-
-gem 'newrelic_rpm'
+gem 'redis-rails', '~> 5'

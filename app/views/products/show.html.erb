@@ -32,7 +32,7 @@
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
-
+ 
 
 <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 
@@ -40,14 +40,13 @@
   <%= render partial: "products/stripe_checkout_button" %>
 <% end %>
 
-
 <%= render 'new_comment' %>
+<div class="alert alert-info" style="display:none" role="alert">Action Cable WORKS!!</div>
 <%= render 'comments' %>
 <%= will_paginate @comments %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
-
 
 </div>
 </div>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  mount ActionCable.server => '/cable' 
 
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => { :registrations => "user_registrations" }
 
@@ -34,7 +36,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#landing_page'
-  
+ 
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
