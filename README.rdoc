@@ -2,9 +2,11 @@
 
 Hello I am Hector and I am a Developer in Arizona.
 
-Things you may want to cover:
+App created with:
 
-* Ruby version
+* Ruby version 2.2.4
+
+* Rails Version 5.0.0.1
 
 * System dependencies
 
@@ -20,7 +22,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* This is a Production Ready Web App. 
 
 
 Please feel free to use a different markup language if you do not plan to run
